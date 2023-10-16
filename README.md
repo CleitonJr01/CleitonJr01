@@ -8,7 +8,7 @@
 
   -Projetos-
 
-  <a href= "https://cleitonjr01.github.io/projeto-android/">Projeto Android</a>
+  <a target="_blank" href= "https://cleitonjr01.github.io/projeto-android/">Projeto Android</a>
 
 
 <!---
