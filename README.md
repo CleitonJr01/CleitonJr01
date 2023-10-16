@@ -4,11 +4,11 @@
 
   -Repositorios-
 
-  <a hsrc= "https://github.com/CleitonJr01/Html-Css">Repositorio de Estudos de HTML/CSS</a>
+  <a href= "https://github.com/CleitonJr01/Html-Css">Repositorio de Estudos de HTML/CSS</a>
 
   -Projetos-
 
-  <a hsrc= "https://cleitonjr01.github.io/projeto-android/">Projeto Android</a>
+  <a href= "https://cleitonjr01.github.io/projeto-android/">Projeto Android</a>
 
 
 <!---
