@@ -10,6 +10,8 @@
 
   <a target="_blank" href= "https://cleitonjr01.github.io/projeto-android/">Projeto Android</a>
 
+  <a target="_blank" href= "https://cleitonjr01.github.io/projeto-cordel/">Projeto Cordel</a>
+
 
 <!---
 CleitonJr01/CleitonJr01 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
