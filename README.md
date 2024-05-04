@@ -2,7 +2,9 @@
 • 🇧🇷 Itabuna-Brasil<br>
 • 📱 Contato: cleitonjunior2007itb@gmail.com<br>
 • 💻 Aqui estão meus repositorios de estudos e alguns projetos 
-
+<ul>
+        <li><img src="Img/icone-github.png " alt="Icone do GitHub"><a href="https://github.com/Ice010101" target="_blank" rel="external"> Meu GitHub</a></li>
+    </ul>
   -Repositorios-
 
   <a href= "https://github.com/CleitonJr01/Html-Css">Repositorio de Estudos de HTML/CSS</a>
