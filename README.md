@@ -1,5 +1,7 @@
-- 👋 Oi meu nome é Cleiton
-- 🤓 Sou estudante de desenvolvimento web
+ <h1>Ola, sou Cleiton</h1>
+ <hr>
+- 🇧🇷 Itabuna-Brasil
+- 📱 Contato: cleitonjunior2007itb@gmail.com
 - 💻 Aqui estão meus repositorios de estudos e alguns projetos 
 
   -Repositorios-
