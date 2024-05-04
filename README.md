@@ -1,8 +1,7 @@
  <h1>Ola, sou Cleiton</h1>
- <hr>
-- 🇧🇷 Itabuna-Brasil
-- 📱 Contato: cleitonjunior2007itb@gmail.com
-- 💻 Aqui estão meus repositorios de estudos e alguns projetos 
+• 🇧🇷 Itabuna-Brasil<br>
+• 📱 Contato: cleitonjunior2007itb@gmail.com<br>
+• 💻 Aqui estão meus repositorios de estudos e alguns projetos 
 
   -Repositorios-
 
