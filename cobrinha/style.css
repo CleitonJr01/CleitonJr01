@@ -1,0 +1,144 @@
+/* Reset básico */
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+	margin: 0;
+	font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, sans-serif;
+	color: #e6f0ff;
+	background: radial-gradient(1200px 800px at 70% 10%, #1b2236 0%, #121725 40%, #0d1220 100%);
+	background-attachment: fixed;
+	line-height: 1.5;
+}
+
+.app { display: grid; grid-template-rows: auto 1fr auto; min-height: 100dvh; }
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px clamp(16px, 4vw, 40px);
+	gap: 16px;
+}
+.header h1 {
+	margin: 0;
+	font-size: clamp(22px, 3.5vw, 40px);
+	letter-spacing: 4px;
+	font-weight: 700;
+	color: #eaf2ff;
+	text-shadow: 0 2px 24px rgba(67, 126, 255, 0.4);
+}
+.header h1 span { color: #7cf1ff; }
+
+.controls { display: flex; gap: 10px; }
+.btn {
+	appearance: none;
+	background: #1b2a4a;
+	color: #dbe6ff;
+	border: 1px solid rgba(124, 241, 255, 0.25);
+	padding: 10px 14px;
+	border-radius: 12px;
+	cursor: pointer;
+	transition: transform .08s ease, box-shadow .2s ease, background .2s ease;
+	box-shadow: inset 0 0 0 1px rgba(124, 241, 255, 0.15), 0 6px 24px rgba(0,0,0,.25);
+}
+.btn:hover { transform: translateY(-1px); background: #203459; }
+.btn:active { transform: translateY(0); }
+.btn.primary { background: linear-gradient(135deg, #3a7bff, #20d1ff); color: #081325; border: none; }
+.btn.primary:hover { filter: brightness(1.05); }
+
+.main {
+	display: grid;
+	place-items: center;
+	padding: 10px clamp(10px, 3vw, 30px) 24px;
+}
+
+.board-wrap {
+	position: relative;
+	display: grid;
+	place-items: center;
+	border-radius: 16px;
+	padding: 12px;
+	background: linear-gradient(180deg, rgba(60, 85, 145, 0.25), rgba(22, 32, 60, 0.25));
+	box-shadow: 0 12px 40px rgba(4, 8, 18, 0.6), inset 0 0 0 1px rgba(124, 241, 255, 0.1);
+}
+
+#board {
+	width: min(88vw, 520px);
+	height: min(88vw, 520px);
+	max-width: 520px;
+	max-height: 520px;
+	background:
+		radial-gradient(120px 120px at 20% 15%, rgba(60, 115, 235, .08), transparent 70%),
+		radial-gradient(160px 160px at 80% 75%, rgba(32, 209, 255, .08), transparent 70%),
+		linear-gradient(180deg, #091022, #0b1323);
+	border-radius: 12px;
+	border: 1px solid rgba(124, 241, 255, 0.15);
+}
+
+.overlay {
+	position: absolute;
+	inset: 12px;
+	display: grid;
+	place-items: center;
+	pointer-events: none;
+}
+.overlay .card {
+	pointer-events: auto;
+	background: rgba(9, 18, 40, 0.75);
+	backdrop-filter: blur(6px);
+	border: 1px solid rgba(124, 241, 255, 0.2);
+	border-radius: 16px;
+	padding: 24px;
+	text-align: center;
+	box-shadow: 0 20px 60px rgba(2, 6, 18, 0.8);
+	animation: pop .35s ease;
+}
+.overlay h2 { margin: 0 0 8px; font-size: 20px; }
+.overlay p { margin: 0 0 16px; font-size: 14px; opacity: .85; }
+
+.hud {
+	position: absolute;
+	bottom: -56px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	gap: 16px;
+	background: rgba(13, 20, 40, 0.6);
+	border: 1px solid rgba(124, 241, 255, 0.15);
+	border-radius: 12px;
+	padding: 8px 12px;
+	backdrop-filter: blur(6px);
+}
+.stat { display: flex; gap: 8px; align-items: center; }
+.stat span { opacity: .7; font-size: 12px; }
+.stat strong { font-size: 16px; color: #7cf1ff; }
+
+.controls-touch {
+	margin-top: 80px;
+	display: grid;
+	grid-template-rows: auto auto auto;
+	place-items: center;
+	gap: 10px;
+}
+.controls-touch .middle { display: flex; gap: 44px; }
+.dpad {
+	width: 64px;
+	height: 64px;
+	border-radius: 14px;
+	border: 1px solid rgba(124, 241, 255, 0.25);
+	background: linear-gradient(180deg,#162543,#0e1834);
+	color: #dbe6ff;
+	font-size: 20px;
+	cursor: pointer;
+	box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35), inset 0 0 0 1px rgba(124, 241, 255, 0.15);
+}
+.dpad:active { transform: translateY(1px); }
+
+.footer { text-align: center; padding: 16px; opacity: .7; font-size: 12px; }
+
+@keyframes pop { from { transform: scale(.95); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+
+/* Responsividade */
+@media (min-width: 860px) {
+	.controls-touch { display: none; }
+}

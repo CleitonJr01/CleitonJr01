@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Cobrinha Deluxe</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css" />
+	<meta name="theme-color" content="#121725" />
+</head>
+<body>
+	<div class="app">
+		<header class="header">
+			<h1>COBRINHA <span>DELUXE</span></h1>
+			<div class="controls">
+				<button class="btn" id="btn-play" aria-label="Jogar/Pausar">▶</button>
+				<button class="btn" id="btn-restart" aria-label="Reiniciar">↻</button>
+			</div>
+		</header>
+
+		<main class="main">
+			<section class="board-wrap">
+				<canvas id="board" width="480" height="480" aria-label="Tabuleiro do jogo"></canvas>
+				<div class="overlay" id="overlay">
+					<div class="card">
+						<h2>Toque para jogar</h2>
+						<p>Use as setas do teclado ou deslize na tela.</p>
+						<button class="btn primary" id="btn-start">Começar</button>
+					</div>
+				</div>
+				<div class="hud">
+					<div class="stat"><span>Score</span><strong id="score">0</strong></div>
+					<div class="stat"><span>Recorde</span><strong id="best">0</strong></div>
+					<div class="stat"><span>Velocidade</span><strong id="speed">1x</strong></div>
+				</div>
+			</section>
+
+			<section class="controls-touch" aria-label="Controles por toque">
+				<button class="dpad up" data-dir="up" aria-label="Cima">▲</button>
+				<div class="middle">
+					<button class="dpad left" data-dir="left" aria-label="Esquerda">◀</button>
+					<button class="dpad right" data-dir="right" aria-label="Direita">▶</button>
+				</div>
+				<button class="dpad down" data-dir="down" aria-label="Baixo">▼</button>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<p>Feito com ❤ — Cobrinha Deluxe</p>
+		</footer>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
